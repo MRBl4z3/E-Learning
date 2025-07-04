@@ -14,10 +14,10 @@ const { $auth } = useNuxtApp()
 
 const login = async () => {
   try {
-    await $auth.signInWithEmailAndPassword(email.value, password.value)
-    alert('Login berhasil')
+    const user = await $auth.signInWithEmailAndPassword(email.value, password.value)
+    alert('Login berhasil sebagai ' + user.user.displayName)
   } catch (e) {
-    alert('Gagal login: ' + e.message)
+    alert('Login gagal')
   }
 }
 </script>

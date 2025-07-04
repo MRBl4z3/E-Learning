@@ -1,30 +1,3 @@
-// import { initializeApp } from 'firebase/app'
-// import { getAuth } from 'firebase/auth'
-// import { getFirestore } from 'firebase/firestore'
-// import { getStorage } from 'firebase/storage'
-
-// export default defineNuxtPlugin(() => {
-//   const config = useRuntimeConfig()
-
-//   const firebaseConfig = {
-//     apiKey: config.public.firebaseApiKey,
-//     authDomain: config.public.firebaseAuthDomain,
-//     projectId: config.public.firebaseProjectId,
-//     storageBucket: config.public.firebaseStorageBucket,
-//     appId: config.public.firebaseAppId,
-//   }
-
-//   const app = initializeApp(firebaseConfig)
-
-//   return {
-//     provide: {
-//       auth: getAuth(app),
-//       db: getFirestore(app),
-//       storage: getStorage(app),
-//     },
-//   }
-// })
-
 export default defineNuxtPlugin(() => {
   const mockUser = {
     uid: 'user123',
